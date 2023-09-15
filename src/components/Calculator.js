@@ -6,6 +6,7 @@ export function Display({ result }) {
   return (
     <div>
       <h1>{result}</h1>
+      <ButtonBar />
     </div>
   );
 }

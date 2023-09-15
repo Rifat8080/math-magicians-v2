@@ -1,10 +1,9 @@
-import { Display, ButtonBar } from './Calculator';
+import { Display } from './Calculator';
 
 function App() {
   return (
     <>
       <Display />
-      <ButtonBar />
     </>
   );
 }
