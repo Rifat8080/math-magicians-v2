@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Calculator from './Calculator';
 import './App.css';
+import Calculator from './Calculator';
+import Quotes from './Quote';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return <Calculator />;
-  }
+function App() {
+  return (
+    <div className="App">
+      <div className="row justify-content-center mt-5">
+        <Calculator />
+        <Quotes />
+      </div>
+    </div>
+  );
 }
 
 export default App;
