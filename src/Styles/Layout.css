@@ -1,0 +1,44 @@
+.h1-title {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.nav-item {
+  border-right: 1px solid blue;
+  list-style: none;
+  padding: 15px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  color: blue;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: large;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.active {
+  color: red !important;
+}
+
+h1 title {
+  font-size: 30px;
+}
+
+#navbarNav {
+  margin-left: 70%;
+  margin-top: -8%;
+}
+
+.quote-text {
+  text-align: center;
+}

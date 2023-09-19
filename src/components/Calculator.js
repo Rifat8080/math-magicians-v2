@@ -1,70 +1,65 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './App.css';
+import React, { useState } from 'react';
+import Button from './Button';
+import calculate from '../logic/calculate';
+import '../Styles/Layout.css';
 
-export function Display({ result }) {
+const Calculator = () => {
+  const [state, setState] = useState({ total: 0, next: null, operation: null });
+
+  const handleClick = (e) => {
+    setState((state) => calculate(state, e.target.textContent));
+  };
+
+  const { total, next, operation } = state;
   return (
-    <div>
-      <h1>{result}</h1>
-      <ButtonBar />
-    </div>
-  );
-}
-
-Display.defaultProps = {
-  result: '0',
-};
-
-Display.propTypes = {
-  result: PropTypes.string,
-};
-
-export function ButtonBar() {
-  return (
-    <div>
-      <div className="button">
-        <div className="row">
-          <div className="number">AC</div>
-          <div className="number">+/-</div>
-          <div className="number">%</div>
-          <div className="orange">&#247;</div>
+    <section className="main-container">
+      <div className="math-text">
+        <h2>Lets do some math</h2>
+      </div>
+      <div className="wrapper">
+        <div className="calculator">
+          <div className="screen">
+            {total}
+            {operation}
+            {next}
+          </div>
         </div>
-        <div className="row">
-          <div className="number">7</div>
-          <div className="number">8</div>
-          <div className="number">9</div>
-          <div className="orange">&#215;</div>
-        </div>
-        <div className="row">
-          <div className="number">4</div>
-          <div className="number">5</div>
-          <div className="number">6</div>
-          <div className="orange">-</div>
-        </div>
-        <div className="row">
-          <div className="number">1</div>
-          <div className="number">2</div>
-          <div className="number">3</div>
-          <div className="orange">+</div>
-        </div>
-        <div className="row">
-          <div className="zero">0</div>
-          <div className="decimal">.</div>
-          <div className="orange">=</div>
+        <div className="keyboard">
+          <Button onClick={handleClick}>AC</Button>
+          <Button onClick={handleClick}>+/-</Button>
+          <Button onClick={handleClick}>%</Button>
+          <Button onClick={handleClick} className="orange">
+            ÷
+          </Button>
+          <Button onClick={handleClick}>7</Button>
+          <Button onClick={handleClick}>8</Button>
+          <Button onClick={handleClick}>9</Button>
+          <Button onClick={handleClick} className="orange">
+            x
+          </Button>
+          <Button onClick={handleClick}>4</Button>
+          <Button onClick={handleClick}>5</Button>
+          <Button onClick={handleClick}>6</Button>
+          <Button onClick={handleClick} className="orange">
+            -
+          </Button>
+          <Button onClick={handleClick}>1</Button>
+          <Button onClick={handleClick}>2</Button>
+          <Button onClick={handleClick}>3</Button>
+          <Button onClick={handleClick} className="orange">
+            +
+          </Button>
+          <Button onClick={handleClick} id="zero">
+            0
+          </Button>
+          <Button onClick={handleClick}>.</Button>
+          <Button onClick={handleClick} className="orange">
+            =
+          </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
-
-export function Button({ buttonName }) {
-  return (
-    <div>
-      <h1>{buttonName}</h1>
-    </div>
-  );
-}
-
-Button.propTypes = {
-  buttonName: PropTypes.string.isRequired,
 };
+
+export default Calculator;
