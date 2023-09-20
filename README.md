@@ -85,10 +85,10 @@ npm test
 - Twitter: [Md Mahadi Hasan Rifat](https://twitter.com/mdmahadirifat98)
 - LinkedIn: [Md Mahadi Hasan Rifat](https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/)
 
-👤 **MoFuhidy**
+👤 **Shinn Thant Swam Ye**
 
-- GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
-- LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mo-fuhidy/)
+- GitHub: [@Pi1998](https://github.com/Pi1998)
+- LinkedIn: [Shinn Thant Swam Ye](https://www.linkedin.com/in/shinn-thant-swam-ye-4171a8257/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
