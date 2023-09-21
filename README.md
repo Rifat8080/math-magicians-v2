@@ -90,6 +90,10 @@ npm test
 - GitHub: [@Pi1998](https://github.com/Pi1998)
 - LinkedIn: [Shinn Thant Swam Ye](https://www.linkedin.com/in/shinn-thant-swam-ye-4171a8257/)
 
+👤 **Eric Delali Mawudeku**
+- GitHub: [@erickma1](https://github.com/erickma1)
+- LinkedIn: [Eric Delali Mawudeku](https://www.linkedin.com/in/eric-mawudeku-55b74883/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
